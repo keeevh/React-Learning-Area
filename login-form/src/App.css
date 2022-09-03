@@ -1,38 +1,131 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  background: white;
+  height: 75vh;
+  width: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.08); 
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.08);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  width: 50%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-left {
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.card-left h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-login-list {
+  display: flex;
+  list-style: none;
+  margin: 30px 0 30px 0;
+  padding: 0;
+}
+
+.social-media-login-list li {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.social-media-login-list li img {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 7.5px;
+}
+
+.card-left form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-left form {
+  margin: 15px 0 0 0;
+  width: 70%;
+}
+
+.card-left form input {
+  margin: 7.5px 0;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: 1.5px solid #dbdcdc;
+  background: #F7F8F9;
+}
+
+.checkox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#form-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+label {
+  font-size: 14px;
+}
+
+label a {
+  color: rgb(57, 190, 61);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  padding: 15px 55px;
+  font-weight: bold;
+  border-radius: 7.5px;
+}
+
+.sign-up {
+  background: rgb(43, 146, 47);
   color: white;
+  border: rgb(43, 146, 47);
 }
 
-.App-link {
-  color: #61dafb;
+.sign-in {
+  background: none;
+  border: 2px solid rgb(43, 146, 47);
+  color: rgb(43, 146, 47);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-right {
+  background: url('https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+  background-size: cover;
 }
