@@ -32,8 +32,18 @@ function SocialLogin() {
 }
 
 function FormInput(props) {
+  return (
+    <input
+      id={`form-${props.name}`}
+      type={props.type}
+      placeholder={props.name}
+    ></input>
+  );
+}
+
+function FormButton(props) {
   return(
-    <input id={`form-${props.name}`} type={props.type} placeholder={props.name}></input>
+    <button className={props.solid ? "solid" : "light"} >{props.text}</button>
   )
 }
 
@@ -51,10 +61,8 @@ function LoginForm() {
         </label>
       </div>
       <div className="form-buttons">
-        <button type="submit" className="sign-up">
-          Sign Up
-        </button>
-        <button className="sign-in">Sign In</button>
+        <FormButton text="Sign Up" solid={true} />
+        <FormButton text="Sign In" solid={false} />
       </div>
     </form>
   );
