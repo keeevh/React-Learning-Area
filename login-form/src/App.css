@@ -1,39 +1,48 @@
+/* MOBILE FIRST DESIGN */
+
 body {
   height: 100vh;
-  width: 100vw;
-  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+  
 .App {
-  display: flex;
   background: white;
-  height: 75vh;
-  width: 1000px;
+  margin: 0;
+  padding: 0;
   border-radius: 15px;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.08); 
-  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
 }
 
-.card {
-  width: 50%;
-  height: 100%;
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .card-left {
-  padding: 15px;
+  padding: 50px 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.card-left h1 {
-  margin: 0;
-  padding: 0;
+.card-left form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+  width: 70%;
+}
+
+.card-right {
+  display: none;
 }
 
 .social-media-login-list {
@@ -59,16 +68,13 @@ body {
 .card-left form {
   display: flex;
   flex-direction: column;
+  margin: 15px 0 0 0;
+  width: 95%;
 }
 
 .card-left p {
   margin: 0;
   padding: 0;
-}
-
-.card-left form {
-  margin: 15px 0 0 0;
-  width: 70%;
 }
 
 .card-left form input {
@@ -85,7 +91,7 @@ body {
   margin-top: 5px;
 }
 
-#form-checkbox {
+#form-Checkbox {
   width: 20px;
   height: 20px;
   margin-right: 15px;
@@ -108,24 +114,67 @@ label a {
 }
 
 .form-buttons button {
-  padding: 15px 55px;
+  padding: 15px 40px;
   font-weight: bold;
   border-radius: 7.5px;
 }
 
-.sign-up {
+.solid {
   background: rgb(43, 146, 47);
   color: white;
   border: rgb(43, 146, 47);
 }
 
-.sign-in {
+.light{
   background: none;
   border: 2px solid rgb(43, 146, 47);
   color: rgb(43, 146, 47);
 }
 
-.card-right {
-  background: url('https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
-  background-size: cover;
+/* MEDIA QUERIES FOR TABLETS AND SMALL LAPTOPS */
+@media all and (min-width: 1024px) {
+  body {
+    background: rgb(242, 242, 242);
+  }
+
+  .App {
+  display: flex;
+  flex-direction: row;
+  width: 768px;
+  overflow: hidden;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .card-right {
+    display: block;
+    background: url('https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .form-buttons button {
+  padding: 15px 55px;
+  } 
+}
+
+/* MEDIA QUERIES FOR BIGGER SCREENS */
+@media all and (min-width: 1264px) {
+.App {
+  width: 1024px;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .card-left {
+    padding: 50px 100px
+  }
+
+  .form-buttons button {
+  padding: 15px 65px;
+  } 
 }
