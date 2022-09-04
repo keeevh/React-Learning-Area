@@ -77,11 +77,21 @@ function CardLeft() {
   );
 }
 
+const Keeevh = () => {
+  return(
+    <div className="watermark">
+      <p>Made with Love by <a href="https://github.com/keeevh" target="_blank">Keeevh</a>.</p>
+    </div>
+  )
+};
+
 function App() {
   return (
     <div className="App">
       <CardLeft />
-      <div className="card card-right"></div>
+      <div className="card card-right">
+        <Keeevh />
+      </div>
     </div>
   );
 }

@@ -11,6 +11,36 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.watermark {
+  position: absolute;
+  font-size: 12px;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 5px 0px;
+  border-radius: 10px;
+  max-width: 200px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+  transition: 250ms ease-out;
+}
+
+.watermark:hover {
+  background: rgb(10, 10, 10);
+  color: white;
+  transition: 250ms ease-out;
+}
+
+.watermark a {
+  text-decoration: none;
+  color: rgb(43, 146, 47);
+  font-weight: bold;
+}
   
 .App {
   background: white;
@@ -43,6 +73,7 @@ h1 {
 
 .card-right {
   display: none;
+  position: relative;
 }
 
 .social-media-login-list {
