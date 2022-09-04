@@ -12,7 +12,7 @@ library.add(faGithub);
 function SocialIcon(props) {
   return (
     <li>
-      <FontAwesomeIcon className={`${props.brand}Icon`} icon={`fa-brands fa-${props.brand}`} />
+      <FontAwesomeIcon className={`${props.brand}Icon SoMeIcon`} icon={`fa-brands fa-${props.brand}`} />
     </li>
   );
 }
@@ -22,7 +22,7 @@ function SocialLogin() {
   return (
     <ul className="social-media-login-list">
       <SocialIcon brand="google" />
-      <SocialIcon brand="facebook" />
+      <SocialIcon brand="facebook-f" />
       <SocialIcon brand="instagram" />
       <SocialIcon brand="github" />
     </ul>
