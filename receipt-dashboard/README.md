@@ -1,6 +1,6 @@
 # Static Receipt Dashboard
 
-This learning project used a design from <a href="https://dribbble.com/haloweb" target="_blank">Halo UI/UX</a> | <a href="https://dribbble.com/shots/18028532-Admin-dashboard-analytics-UX" target="_blank">Design</a>)
+This learning project used a design from <a href="https://dribbble.com/haloweb" target="_blank">Halo UI/UX</a> | <a href="https://dribbble.com/shots/18028532-Admin-dashboard-analytics-UX" target="_blank">Design</a>
 
 ## Learning Goal
 
