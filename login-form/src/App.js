@@ -1,32 +1,30 @@
 import "./App.css";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faFacebookF, faGithub, faGoogle, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+library.add(faFacebookF);
+library.add(faInstagram);
+library.add(faGoogle);
+library.add(faGithub);
+
+function SocialIcon(props) {
+  return (
+    <li>
+      <FontAwesomeIcon className={`${props.brand}Icon`} icon={`fa-brands fa-${props.brand}`} />
+    </li>
+  );
+}
+
+
 function SocialLogin() {
   return (
     <ul className="social-media-login-list">
-      <li>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/104/104093.png"
-          alt="Google Icon"
-        ></img>
-      </li>
-      <li>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/733/733605.png"
-          alt="Facebook Icon"
-        ></img>
-      </li>
-      <li>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png"
-          alt="Instagram Icon"
-        ></img>
-      </li>
-      <li>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/733/733609.png"
-          alt="GitHub Icon"
-        ></img>
-      </li>
+      <SocialIcon brand="google" />
+      <SocialIcon brand="facebook" />
+      <SocialIcon brand="instagram" />
+      <SocialIcon brand="github" />
     </ul>
   );
 }
@@ -42,9 +40,9 @@ function FormInput(props) {
 }
 
 function FormButton(props) {
-  return(
-    <button className={props.solid ? "solid" : "light"} >{props.text}</button>
-  )
+  return (
+    <button className={props.solid ? "solid" : "light"}>{props.text}</button>
+  );
 }
 
 function LoginForm() {
