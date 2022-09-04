@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.menu-bar {
+  width: 15%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.content-container {
+  width: 85%;
+  padding: 50px;
+  background: #FCF4F0;
+}
