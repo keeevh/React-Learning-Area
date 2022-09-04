@@ -131,6 +131,41 @@ label a {
   color: rgb(43, 146, 47);
 }
 
+.SoMeIcon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  padding: 7.5px;
+  border-radius: 50%;
+  transition: 150ms ease-out;
+}
+
+.SoMeIcon:hover {
+  transition: 150ms ease-out;
+  color: white;
+  cursor: pointer;
+}
+
+.googleIcon:hover {
+  border: 2px solid #E24134;
+  background: #E24134;
+}
+
+.facebook-fIcon:hover {
+  border: 2px solid #4867AA;
+  background: #4867AA;
+}
+
+.instagramIcon:hover {
+  border: 2px solid #D62778;
+  background: #D62778;
+}
+
+.githubIcon:hover {
+  border: 2px solid #333;
+  background: #333;
+}
+
 /* MEDIA QUERIES FOR TABLETS AND SMALL LAPTOPS */
 @media all and (min-width: 1024px) {
   body {
