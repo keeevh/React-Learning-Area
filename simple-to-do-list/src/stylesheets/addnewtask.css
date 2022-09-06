@@ -1,0 +1,74 @@
+.new-task-overlay {
+    background: gray;
+    position: absolute;
+    display: none;
+    transition: 250ms ease-out;
+}
+
+.fade-in {
+    display: block;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    opacity: 75%;
+    width: 100vw;
+    height: 100vh;
+    transition: 250ms ease-out;
+}
+
+.new-task-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    position: absolute;
+    bottom: -300px;
+    background: white;
+    border-radius: 25px 25px 0 0;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.075);
+    z-index: 999;
+    transition: 250ms ease-out;
+}
+
+.slide {
+    transform: translateY(-300px);
+    transition: 250ms ease-out;
+}
+
+.new-task-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.new-task-form input {
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.new-task-form input:focus {
+    outline: none;
+}
+
+.new-task-form select {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgb(243, 243, 243);
+    outline: none;
+}
+
+.new-task-form button {
+    padding: 15px 0px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 120, 120);
+    color: white;
+    font-weight: bold;
+}
