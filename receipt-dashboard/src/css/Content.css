@@ -51,3 +51,49 @@
     cursor: pointer;
     transition: 250ms ease-out;
 }
+
+.content-banner {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-message h1 {
+    font-family: pacifico;
+    font-weight: 400;
+    font-size: 50px;
+    margin: -15px 0 10px 0;
+}
+
+.welcome-message p {
+    margin: 0;
+    font-size: 18px;
+    color: gray;
+}
+
+.dashboard-numbers {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 200px;
+}
+
+.dashboard-numbers div {
+    width: 125px;
+    height: 75px;
+}
+
+.dashboard-numbers .number-left {
+    border-right: 1px solid rgb(172, 172, 172);
+}
+
+.dashboard-numbers h2 {
+    font-size: 34px;
+    font-family: pacifico;
+    font-weight: 400;
+    margin-top: -15px;
+}
+
+.dashboard-numbers p {
+    margin: -25px;
+}
