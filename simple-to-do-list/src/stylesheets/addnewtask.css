@@ -1,7 +1,7 @@
 .new-task-overlay {
     background: gray;
-    position: absolute;
     display: none;
+    z-index: 999;
     transition: 250ms ease-out;
 }
 
@@ -9,6 +9,7 @@
     display: block;
     background: rgb(0, 0, 0);
     position: absolute;
+    top: 0;
     opacity: 75%;
     width: 100vw;
     height: 100vh;
